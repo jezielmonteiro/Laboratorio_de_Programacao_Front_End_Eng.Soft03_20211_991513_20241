@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skrillex</title>
+</head>
+<body>
+<h2>CONTATE-ME</h2>
+<br>
+    <form>
+         <label for="nome">NOME:</label>
+         <input type="text" id="nome" name="nome">
+    
+         <label for="email">E-MAIL:</label>
+         <input type="email" id="email" name="email">
+    
+         <label for="mensagem">MENSAGEM:</label>
+         <textarea id="mensagem" name="mensagem"></textarea>
+    
+         <input type="submit" value="ENVIAR">
+     </form>
+<a href="{{url_for('turnes')}}">Voltar para a página de turnês</a>
+<a href="{{url_for('redes_sociais')}}">Redes Sociais</a>
+</body>
+</html>
