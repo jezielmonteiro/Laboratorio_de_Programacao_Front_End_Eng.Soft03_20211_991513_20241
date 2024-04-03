@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skrillex</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/skrillex.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='img/skrillex.png')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+</head>
+<style>
+    .with-padding {
+       padding-left: 15px;
+       padding-right: 15px;
+    }
+</style>
+<body>
+    <header>
+        <div class="with-padding">
+            <img src="{{url_for('static', filename='img/skrillex.jpg')}}" width="150px" height="150px">
+        </div>
+    </header>
+    <section id="discografia">
+        <h2>D I S C O G R A F I A</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="with-padding">
+            <article class="album">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7tWP3OG5dWphctKg4NMACt?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </article>
+            <br>
+            <br>
+            <br>
+            <article class="album">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5XJ2NeBxZP3HFM8VoBQEUe?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </article>
+            <br>
+            <br>
+            <br>
+            <article class="album">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7rf1qZJ6hGSlPN7K9ShsVV?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </article>
+        </div>
+        <br>
+        <br>
+        <br>
+    </section> 
+    <section id="dir">
+        <a href="{{url_for('biografia')}}">BIOGRAFIA</a>
+        <a href="{{url_for('turnes')}}">TURNÊS</a>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
