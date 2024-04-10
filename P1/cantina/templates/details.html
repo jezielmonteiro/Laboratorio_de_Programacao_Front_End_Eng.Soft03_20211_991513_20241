@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantina Universitária</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='img/icon.png')}}">
+</head>
+</head>
+<body>
+    <header>
+        <img src="{{url_for('static', filename='img/uss.png')}}" alt="Cantina Universitária" class="header-logo">
+        <nav class="header-nav">
+            <ul>
+                <li class="header-nav-item"><a href="{{url_for('home')}}">Início</a></li>
+                <li class="header-nav-item"><a href="{{url_for('details')}}">Detalhes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="cantina">
+        <div class="cantina">
+            <div class="cantina-texto">
+                <h2>Cantina Universitária de Vassouras</h2>
+                <p>Pizza de Calabresa | R$18,00 reais<br><br>Ingredientes:<br><br>2 ovos;<br><br> 1 colher de chá rasa de sal;<br><br>1 colher de chá de fermento para bolo;<br><br>1/2 de xícara de chá de oléo de soja(100ml);<br><br>2 xícaras de chá de leite;<br><br>2 xícaras de chá de farinha de trigo sem fermento(240 gramas);<br><br>150g de molho de tomate;<br><br>250g de queijo mussarela;<br><br>200g de linguiça calabresa;<br><br>orégano;<br><br>azeitonas pretas;<br><br><br><span>#CantinaUniversitária</p>
+            </div>
+            <img src="{{url_for('static', filename='img/pizza.jpg')}}" alt="Pizza"><a href="{{url_for('details')}}">Pizza</a>
+        </div>
+        <div class="cantina">
+            <div class="cantina-texto">
+                <p>Hamburguer | R$12,00 reais<br><br>Ingredientes:<br><br>3kg de carne moída;<br><br>1 ovo;<br><br>30ml de água gelada;<br><br>300g de bacon;<br><br>3 colheres de sopa de farinha de trigo;<br><br>3 colheres de sopa de tempero caseiro;<br><br><br><span>#CantinaUniversitária</p>
+                <br>
+                <br>
+            </div>
+            <img src="{{url_for('static', filename='img/hamb.jpg')}}" alt="Hamburguer"><a href="{{url_for('details')}}">Hamburguer</a>
+        </div>
+        <div class="cantina">
+            <div class="cantina-texto">
+                <p>Torta de Limão | R$15<br><br>Ingredientes:<br><br>200g de biscoito de maisena;<br><br>150g de margarina;<br><br>1 lata de leite condensado(395g);<br><br>1 caixa de creme de leite (200g);<br><br>suco de 4 limões;<br><br>raspas de 2 limões;<br><br>3/4 claras de ovo;<br><br>3 colheres de sopa de açúcar;<br><br>raspas de 2 limões para decorar;<br><br><br><span>#CantinaUniversitária<br><br><br>Junte-se a nossa cantina e vamos nos deliciar juntos!</span></p>
+                <br>
+                <br>
+            </div>
+            <img src="{{url_for('static', filename='img/torta.jpg')}}" alt="Torta de Limão"><a href="{{url_for('details')}}">Torta de Limão</a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <img src="{{url_for('static', filename='img/uss.png')}}" alt="" class="footer-logo">
+            <div class="footer-nav">
+                <nav>
+                    <ul>
+                        <li class="header-nav-item"><a href="{{url_for('home')}}">Início</a></li>
+                        <li class="header-nav-item"><a href="{{url_for('details')}}">Detalhes</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="cr">
+            <p>&copy;2024, Cantina Universitária da Universidade de Vassouras</p>
+        </div>
+    </footer>
+</body>
+</html>
