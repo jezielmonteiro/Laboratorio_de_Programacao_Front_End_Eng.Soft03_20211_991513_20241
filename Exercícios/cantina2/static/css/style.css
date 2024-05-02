@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2%;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+    padding: .5rem 2rem;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .14);
+    position: fixed;
+    width: 96%;
+    z-index: 9;
+}
+
+.header-logo {
+    width: 100px;
+    height: auto;
+}
+
+.header-nav {
+    width: 30%;
+}
+
+.header-nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-nav-item {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.header-nav-item a {
+    text-decoration: none;
+    color: #a19692;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+}
+
+.header-nav-item a:hover {
+    color: #813132;
+}
+
+.cantina {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 10%;
+    width: 80%;
+}
+
+.cantina img {
+    width: 37%;
+    min-width: 400px;
+}
+
+.cantina a {
+    color: #813132;
+}
+
+.cantina-texto {
+    width: 47%;
+    min-width: 500px;
+}
+
+.cantina-texto a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cantina h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+
+.cantina p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.cantina p span {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+}
+
+footer {
+    background: #813132;
+    display: block;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-logo {
+    width: 1%;
+    height: auto;
+    flex-grow: 1;
+}
+
+.footer-nav {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav li {
+    margin: 1rem 0;
+}
+
+.footer-nav li a:hover {
+    color: white;
+}
+
+.footer-nav a {
+    margin-top: 2rem;
+}
+
+.cr {
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+}

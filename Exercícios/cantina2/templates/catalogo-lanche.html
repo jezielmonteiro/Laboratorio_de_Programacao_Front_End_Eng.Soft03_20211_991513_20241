@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantina Universitária</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='img/icon.png')}}">
+</head>
+<body>
+    <header>
+        <img src="{{url_for('static', filename='img/uss.png')}}" alt="Cantina Universitária" class="header-logo">
+        <nav class="header-nav">
+            <ul>
+                <li class="header-nav-item"><a href="{{url_for('home')}}">Início</a></li>
+                <li class="header-nav-item"><a href="{{url_for('catalogo_lanche')}}">Lanches</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="cantina">
+        <div class="cantina">
+            <div class="cantina-texto">
+                <h2>Lanches</h2>
+                {% for lanche in lanches %}
+                <p>{{lanche.nome}}</p>
+                <img src="{{lanche.img}}" alt="{{lanche.nome}}">
+                <br>
+                <br>
+                <br>
+                {% endfor %}
+            </div>
+            <article>
+                {% for lanche in lanches %}
+                <p><a href="{{url_for('lanche', id=lanche.id)}}"><br><br><br><br><br><br><br><br>Maiores informações<br><br><br><br><br><br><br><br></a></p>
+                {% endfor %}
+            </article>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <img src="{{url_for('static', filename='img/uss.png')}}" alt="Cantina Universitária" class="footer-logo">
+            <div class="footer-nav">
+                <nav>
+                    <ul>
+                        <li class="header-nav-item"><a href="{{url_for('home')}}">Início</a></li>
+                        <li class="header-nav-item"><a href="{{url_for('catalogo_lanche')}}">Lanches</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="cr">
+            <p>&copy;2024, Cantina Universitária da Universidade de Vassouras</p>
+        </div>
+    </footer>
+</body>
+</html>

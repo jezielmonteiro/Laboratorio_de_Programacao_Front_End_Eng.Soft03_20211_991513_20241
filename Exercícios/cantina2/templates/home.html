@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantina Universitária</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='img/icon.png')}}">
+</head>
+</head>
+<body>
+    <header>
+        <img src="{{url_for('static', filename='img/uss.png')}}" alt="Cantina Universitária" class="header-logo">
+        <nav class="header-nav">
+            <ul>
+                <li class="header-nav-item"><a href="{{url_for('home')}}">Início</a></li>
+                <li class="header-nav-item"><a href="{{url_for('catalogo_lanche')}}">Lanches</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="cantina">
+        <div class="cantina">
+            <div class="cantina-texto">
+                <h2>Cantina Universitária de Vassouras</h2>
+                <p>Venha fazer seu lanche!<br><br>Temos opções de doces e salgados para você se deliciar em nossa cantina, com a melhor qualidade e preço para você, cliente!<br><br>É a melhor da região!<br><br><br><span>#CantinaUniversitária</p>
+            </div>
+            <img src="{{url_for('static', filename='img/pizza.jpg')}}" alt="Pizza"><a href="{{url_for('catalogo_lanche')}}">Pizza</a>
+        </div>
+        <div class="cantina">
+            <div class="cantina-texto">
+                <p>Temos também nosso hamburguer caseiro feito na hora, com a carne de melhor qualidade e preço para você, cliente!<br><br>O melhor da região!<br><br><br><span>#CantinaUniversitária</p>
+                <br>
+                <br>
+            </div>
+            <img src="{{url_for('static', filename='img/hamb.jpg')}}" alt="Hamburguer"><a href="{{url_for('catalogo_lanche')}}">Hamburguer</a>
+        </div>
+        <div class="cantina">
+            <div class="cantina-texto">
+                <p>Temos também nossa torta de limão deliciosa, com a melhor qualidade e preço para você, cliente!<br><br>O melhor da região!<br><br><br><span>#CantinaUniversitária<br><br><br>Junte-se a nossa cantina e vamos nos deliciar juntos!</span></p>
+                <br>
+                <br>
+            </div>
+            <img src="{{url_for('static', filename='img/torta.jpg')}}" alt="Torta de Limão"><a href="{{url_for('catalogo_lanche')}}">Torta de Limão</a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <img src="{{url_for('static', filename='img/uss.png')}}" alt="Cantina Universitária" class="footer-logo">
+            <div class="footer-nav">
+                <nav>
+                    <ul>
+                        <li class="header-nav-item"><a href="{{url_for('home')}}">Início</a></li>
+                        <li class="header-nav-item"><a href="{{url_for('catalogo_lanche')}}">Lanches</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="cr">
+            <p>&copy;2024, Cantina Universitária da Universidade de Vassouras</p>
+        </div>
+    </footer>
+</body>
+</html>
