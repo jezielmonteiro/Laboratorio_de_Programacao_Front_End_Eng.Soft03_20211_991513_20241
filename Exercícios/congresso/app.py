@@ -4,11 +4,11 @@ from sessao import Sessao
 
 app = Flask(__name__)
 
-psicologia = Sessao(1, "Psicologia", "/static/img/psi.png", "Sessão dedicada a área da Psicologia.", "12:00 - 14:00", "Universidade de Vassouras", "João: 'Adorei a palestra do Jeziel sobre psicologia! Foi muito esclarecedora.'")
+psicologia = Sessao(1, "Psicologia", "/static/img/psi.png", "Sessão dedicada a área da Psicologia", "12:00 - 14:00", "Universidade de Vassouras", "João: 'Adorei a palestra do Jeziel sobre psicologia! Foi muito esclarecedora.'")
 
-fisioterapia = Sessao(2, "Fisioterapia", "/static/img/fisio.png", "Sessão dedicada a área da Fisioterapia.", "14:30 - 16:30", "Universidade de Vassouras", "Maria: 'Maravilhosa a palestra do Felipe sobre fisioterapia! Amei!!!'")
+fisioterapia = Sessao(2, "Fisioterapia", "/static/img/fisio.png", "Sessão dedicada a área da Fisioterapia", "14:30 - 16:30", "Universidade de Vassouras", "Maria: 'Maravilhosa a palestra do Felipe sobre fisioterapia! Amei!!!'")
 
-nutricao = Sessao(3, "Nutrição", "/static/img/nutri.png", "Sessão dedicada a área da Nutrição.", "17:00 - 19:00", "Universidade de Vassouras", "Pedro: 'Ótima palestra do Luiz sobre nutrição.'")
+nutricao = Sessao(3, "Nutrição", "/static/img/nutri.png", "Sessão dedicada a área da Nutrição", "17:00 - 19:00", "Universidade de Vassouras", "Pedro: 'Ótima palestra do Luiz sobre nutrição.'")
 
 sessao_detalhes = [psicologia, fisioterapia, nutricao]
 
