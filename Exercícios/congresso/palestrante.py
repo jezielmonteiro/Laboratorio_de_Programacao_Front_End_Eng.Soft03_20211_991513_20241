@@ -1,5 +1,5 @@
 class Palestrante:
-    def __init__(self, id, nome, img, biografia, area, linkedin, github, instagram, sessao, avaliacao) -> None:
+    def __init__(self, id, nome, img, biografia, area, linkedin, github, instagram, sessao, avaliacao):
         self.id = id
         self.nome = nome
         self.img = img
