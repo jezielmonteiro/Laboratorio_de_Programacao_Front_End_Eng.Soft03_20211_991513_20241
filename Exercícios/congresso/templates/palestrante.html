@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congresso Saúde e Bem-Estar</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='img/congresso.png')}}">
+</head>
+</head>
+<body>
+    <header>
+        <img src="{{url_for('static', filename='img/congresso.png')}}" alt="Congresso Saúde e Bem-Estar" class="header-logo">
+        <nav class="header-nav">
+            <ul>
+                <li class="header-nav-item"><a href="{{url_for('home')}}">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="congresso">
+        <div class="congresso">
+            <div class="congresso-texto">
+                <h2>Congresso Saúde e Bem-Estar</h2>
+                <h1>{{palestrante.nome}}</h1>
+                <br>
+                <p>{{palestrante.area}}</p>
+                <br>
+                <a href="{{palestrante.linkedin}}"><p>LinkedIn</p></a>
+                <br>
+                <a href="{{palestrante.github}}"><p>GitHub</p></a>
+                <br>
+                <a href="{{palestrante.instagram}}"><p>Instagram</p></a>
+                <br>
+                <p>{{palestrante.sessao}}</p>
+                <br>
+                <p>{{palestrante.avaliacao}}</p>
+                <br>
+            </div>
+            <article>
+                <img src="{{palestrante.img}}" alt="{{palestrante.nome}}">
+            </article>
+        </div>
+    </section>
+    <section class="contato">
+        <h1>Deixe seu comentário</h1>
+        <br>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+       
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+       
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+       
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    <footer>
+        <div class="footer">
+            <img src="{{url_for('static', filename='img/congresso.png')}}" alt="Congresso Saúde e Bem-Estar" class="footer-logo">
+            <div class="footer-nav">
+                <nav>
+                    <ul>
+                        <li class="header-nav-item"><a href="{{url_for('home')}}">Início</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="cr">
+            <p>&copy;2024, Congresso Saúde e Bem-Estar</p>
+        </div>
+    </footer>
+</body>
+</html>

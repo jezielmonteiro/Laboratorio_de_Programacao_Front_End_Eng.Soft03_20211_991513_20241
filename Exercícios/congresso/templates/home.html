@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congresso Saúde e Bem-Estar</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='img/congresso.png')}}">
+</head>
+</head>
+<body>
+    <header>
+        <img src="{{url_for('static', filename='img/congresso.png')}}" alt="Congresso Saúde e Bem-Estar" class="header-logo">
+        <nav class="header-nav">
+            <ul>
+                <li class="header-nav-item"><a href="{{url_for('home')}}">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="congresso">
+        <div class="congresso">
+            <div class="congresso-texto">
+                <h2>Congresso Saúde e Bem-Estar</h2>
+                <h1>Sessões e Palestrantes</h1>
+                {% for sessao in sessoes %}
+                <a href="{{url_for('sessao', id=sessao.id)}}"><img src="{{sessao.img}}" alt="{{sessao.nome}}"></a>
+                <br>
+                <p>{{sessao.nome}}</p>
+                <br>
+                {% endfor %}
+            </div>
+            <article>
+                {% for palestrante in palestrantes%}
+                <br><br>
+                <a href="{{url_for('palestrante', id=palestrante.id)}}"><img src="{{palestrante.img}}" alt="{{palestrante.nome}}"></a>
+                <br>
+                <p>{{palestrante.nome}}</p>
+                {% endfor %}
+            </article>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <img src="{{url_for('static', filename='img/congresso.png')}}" alt="Congresso Saúde e Bem-Estar" class="footer-logo">
+            <div class="footer-nav">
+                <nav>
+                    <ul>
+                        <li class="header-nav-item"><a href="{{url_for('home')}}">Início</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="cr">
+            <p>&copy;2024, Congresso Saúde e Bem-Estar</p>
+        </div>
+    </footer>
+</body>
+</html>
