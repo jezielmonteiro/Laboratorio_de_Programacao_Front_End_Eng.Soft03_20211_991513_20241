@@ -1,5 +1,5 @@
 class Lanche:
-    def __init__(self, id, nome, preco, ingredientes, img) -> None:
+    def __init__(self, id, nome, preco, ingredientes, img):
         self.id = id
         self.nome = nome
         self.preco = preco
