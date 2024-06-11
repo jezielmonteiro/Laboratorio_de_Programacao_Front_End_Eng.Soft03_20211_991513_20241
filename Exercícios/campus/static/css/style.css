@@ -1,0 +1,200 @@
+@media screen and (max-width: 768px) {
+    .header-nav {
+        width: 100%;
+    }
+
+    .campus {
+        margin: 1rem 5%;
+        width: 90%;
+    }
+
+    .campus img {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .campus-texto {
+        width: 100%;
+        min-width: auto;
+        padding-top: 50px;
+    }
+
+    .campus-texto img {
+        margin: 1rem 5%;
+        width: 90%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo {
+        width: 30%;
+    }
+
+    .footer-nav {
+        flex-grow: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif; 
+    background-color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: .5rem 2rem;
+    height: 100px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .14);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.header-logo {
+    width: 200px;
+    height: auto;
+}
+
+.header-nav {
+    width: 52%;
+}
+
+.header-nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-nav-item {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.header-nav-item a {
+    text-decoration: none;
+    color: #a19692;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+}
+
+.header-nav-item a:hover {
+    color: #813132;
+}
+
+.campus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 10%;
+    width: 80%;
+}
+
+.campus img {
+    min-width: 350px;
+}
+
+.campus a {
+    color: #813132;
+}
+
+.campus-texto {
+    width: 47%;
+    min-width: 500px;
+    padding-top: 100px;
+}
+
+.campus-texto img {
+    margin: 1rem 10%;
+    width: 80%
+}
+
+.campus-texto a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.campus h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+
+.campus p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.campus p span {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+}
+
+footer {
+    background: #813132;
+    display: block;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-logo {
+    width: 1%;
+    height: auto;
+    flex-grow: 1;
+}
+
+.footer-nav {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav li {
+    margin: 1rem 0;
+}
+
+.footer-nav li a:hover {
+    color: white;
+}
+
+.footer-nav a {
+    margin-top: 2rem;
+}
+
+.copy {
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+}

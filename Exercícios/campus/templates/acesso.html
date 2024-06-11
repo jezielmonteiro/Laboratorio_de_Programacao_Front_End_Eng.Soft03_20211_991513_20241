@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus UniVassouras</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='img/icon.png')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet">
+</head>
+</head>
+<body>
+    <header>
+        <img src="{{url_for('static', filename='img/uss.png')}}" alt="Campus UniVassouras" class="header-logo">
+        <nav class="header-nav">
+            <ul>
+                <li class="header-nav-item"><a href="{{url_for('eventos')}}">Eventos Acadêmicos</a></li>
+                <li class="header-nav-item"><a href="{{url_for('instalacoes')}}">Instalações</a></li>
+                <li class="header-nav-item"><a href="{{url_for('organizacoes')}}">Organizações</a></li>
+                <li class="header-nav-item"><a href="{{url_for('servicos')}}">Serviços</a></li>
+                <li class="header-nav-item"><a href="{{url_for('acessos')}}">Acessos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="campus">
+        <div class="campus">
+            <div class="campus-texto">
+                <h1>Campus UniVassouras</h1>
+                <br>
+                <h1>Transporte e Acesso</h1>
+                {% for acesso in acessos %}
+                <br>
+                <h2>{{acesso.nome}}</h2>
+                <br>
+                <img src="{{acesso.img}}" alt="{{acesso.nome}}">
+                <br>
+                <br>
+                <p>{{acesso.horario}}</p>
+                <br>
+                <h2>Rotas:</h2>
+                <br>
+                <iframe src="{{acesso.rotas}}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br>
+                <br>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <img src="{{url_for('static', filename='img/uss.png')}}" alt="Campus UniVassouras" class="footer-logo">
+            <div class="footer-nav">
+                <nav>
+                    <ul>
+                        <li class="header-nav-item"><a href="{{url_for('eventos')}}">Eventos Acadêmicos</a></li>
+                        <li class="header-nav-item"><a href="{{url_for('instalacoes')}}">Instalações</a></li>
+                        <li class="header-nav-item"><a href="{{url_for('organizacoes')}}">Organizações</a></li>
+                        <li class="header-nav-item"><a href="{{url_for('servicos')}}">Serviços</a></li>
+                        <li class="header-nav-item"><a href="{{url_for('acessos')}}">Acessos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="copy">
+            <p>&copy;Campus UniVassouras. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
