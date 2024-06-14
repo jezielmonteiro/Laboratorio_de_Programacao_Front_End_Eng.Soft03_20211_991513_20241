@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif; 
+    color: #ba3838;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: .5rem 2rem;
+    height: 100px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .14);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.header-logo {
+    width: 80px;
+    height: auto;
+}
+
+.header-nav {
+    width: 52%;
+}
+
+.header-nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-nav-item {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.header-nav-item a {
+    text-decoration: none;
+    color: #ba3838;
+    font-size: 18px;
+}
+
+.header-nav-item a:hover {
+    color: #ffc60b;
+}
+
+.biblioteca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 10%;
+    width: 80%;
+}
+
+.biblioteca img {
+    min-width: 350px;
+}
+
+.biblioteca a {
+    color: #ffc60b;
+}
+
+.biblioteca-texto {
+    width: 47%;
+    min-width: 500px;
+    padding-top: 100px;
+}
+
+.biblioteca-texto img {
+    margin: 1rem 10%;
+    width: 80%
+}
+
+.biblioteca-texto a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.biblioteca h2 {
+    color: #e9a9a9;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+
+.biblioteca p {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.biblioteca p span {
+    font-size: 20px;
+}
+
+footer {
+    background: #ba3838;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-logo {
+    width: 1px;
+    height: auto;
+    flex-grow: 1;
+}
+
+.footer-nav {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav li {
+    margin: 1rem 0;
+}
+
+.footer-nav li a {
+    color: #e9a9a9;
+}
+
+.footer-nav li a:hover {
+    color: #ffc60b;
+}
+
+.footer-nav a {
+    margin-top: 2rem;
+}
+
+.copy {
+    color: #ffc60b;
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+}

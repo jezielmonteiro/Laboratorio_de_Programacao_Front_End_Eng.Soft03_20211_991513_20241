@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Digital Interativa</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='img/logo.png')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet">
+</head>
+</head>
+<body>
+    <header>
+        <img src="{{url_for('static', filename='img/logo.png')}}" alt="Biblioteca Digital Interativa" class="header-logo">
+        <nav class="header-nav">
+            <ul>
+                <li class="header-nav-item"><a href="{{url_for('livros')}}">Livros</a></li>
+                <li class="header-nav-item"><a href="{{url_for('artigos')}}">Artigos Científicos</a></li>
+                <li class="header-nav-item"><a href="{{url_for('revistas')}}">Revistas e Jornais</a></li>
+        </nav>
+    </header>
+    <section id="biblioteca">
+        <div class="biblioteca">
+            <div class="biblioteca-texto">
+                <h1>Biblioteca Digital Interativa</h1>
+                <br>
+                <h1>Livros</h1>
+                {% for livro in livros %}
+                <br>
+                <h2>{{livro.titulo}}</h2>
+                <br>
+                <img src="{{livro.img}}" alt="{{livro.titulo}}">
+                <br>
+                <br>
+                <p>{{livro.autor}}</p>
+                <br>
+                <p>{{livro.categoria}}</p>
+                <br>
+                <p>{{livro.disponibilidade}}</p>
+                <br>
+                <a href="{{livro.reserva}}"><p>Reservar</p></a>
+                <br>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <img src="{{url_for('static', filename='img/logo.png')}}" alt="Biblioteca Digital Interativa" class="footer-logo">
+            <div class="footer-nav">
+                <nav>
+                    <ul>
+                        <li class="header-nav-item"><a href="{{url_for('livros')}}">Livros</a></li>
+                        <li class="header-nav-item"><a href="{{url_for('artigos')}}">Artigos Científicos</a></li>
+                        <li class="header-nav-item"><a href="{{url_for('revistas')}}">Revistas e Jornais</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="copy">
+            <p>&copy; 2024. Todos os direitos reservados a Biblioteca Digital Interativa.</p>
+        </div>
+    </footer>
+</body>
+</html>
